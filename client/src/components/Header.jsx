@@ -6,7 +6,7 @@ export default function Header() {
             <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
-                        <Link className="block text-teal-600" href="/">
+                        <Link className="block text-teal-600" to="/">
                             <span className="sr-only">Home</span>
                             <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -21,27 +21,27 @@ export default function Header() {
                         <nav aria-label="Global">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <Link className="text-white transition hover:text-teal-500/75" href="/about"> About </Link>
+                                    <Link className="text-white transition hover:text-teal-500/75" to="/about"> About </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="text-white transition hover:text-teal-500/75" href="/careers"> Careers </Link>
+                                    <Link className="text-white transition hover:text-teal-500/75" to="/careers"> Careers </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="text-white transition hover:text-teal-500/75" href="/history"> History </Link>
+                                    <Link className="text-white transition hover:text-teal-500/75" to="/history"> History </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="text-white transition hover:text-teal-500/75" href="/services"> Services </Link>
+                                    <Link className="text-white transition hover:text-teal-500/75" to="/services"> Services </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="text-white transition hover:text-teal-500/75" href="/project"> Projects </Link>
+                                    <Link className="text-white transition hover:text-teal-500/75" to="/project"> Projects </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="text-white transition hover:text-teal-500/75" href="/blog"> Blog </Link>
+                                    <Link className="text-white transition hover:text-teal-500/75" to="/blog"> Blog </Link>
                                 </li>
                             </ul>
                         </nav>
@@ -51,18 +51,18 @@ export default function Header() {
                         <div className="sm:flex sm:gap-4">
                             <Link
                                 className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                                href="/sign-in"
+                                to="/sign-in"
                             >
                                 Login
                             </Link>
 
                             <div className="hidden sm:flex">
-                                <a
+                                <Link
                                     className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                                    href="/sing-up"
+                                    to="/sign-up"
                                 >
                                     Register
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
